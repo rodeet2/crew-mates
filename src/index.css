@@ -1,0 +1,131 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #e8e8e8;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #8d8d8d;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3c3c3c;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ff7364;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.navbar{
+  gap: 10px;
+  height: auto;
+  width: 250px;
+  background-color: #555555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.main_content{
+  background-color: #202020;
+  width: 100%;
+  height: 95vh;
+}
+
+.wellcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wellcome-screen img {
+width: 500px;
+}
+
+.create-screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mycrew-screen{
+  display: flex;
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+.input-container{
+  border-radius: 10px;
+  background-color: #4c4c4c;
+  margin: 20px 20px;
+  padding: 30px 30px;
+  width: auto;
+  height: auto;
+}
+
+.crew_member_tile{
+background-color: #213547;
+border-radius: 10px;
+height: 350x;
+width: 100px;
+padding: 30px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+}
+.crew_member_tile img {
+  width: 50px;
+}
+
+.crew_member_tiles{
+  display: flex;
+  gap: 50px;
+}
